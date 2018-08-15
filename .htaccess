@@ -1,0 +1,5 @@
+RewriteCond %{LA-U:REMOTE_USER} !^$
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+ 
+RewriteRule ^.*$ index.html

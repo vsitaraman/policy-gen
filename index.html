@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html ng-app="vsApp" class="no-js"> <!--<![endif]-->
+<!-- 
+   ██▒   ██ ██░ ██▓███      █     █░  ▄▄        ██████     ██░ ██ ▓█████  ██▀███  ▓█████ 
+  ▓██░   █▒░██▒▒██░  ██▒   ▓█░ █ ░█░▒ ███▄    ▒██    ▒     ██░ ██▒▓█   ▀ ▓██   ██▒▓█   ▀ 
+   ▓██  ██░▒██▒▒██░ ██▓▒   ▒█░ █ ░█ ▒██  ▀█▄  ░ ▓██▄      ▒██▀▀██░▒███   ▓██ ░▄█ ▒▒███   
+    ▒██ █░░░██░░██▄█▓▒ ▒   ░█░ █ ░█ ░██▄▄▄▄██   ▒   ██▒   ░▓█ ░██ ▒▓█  ▄ ▒██▀▀█▄  ▒▓█  ▄ 
+     ▒▀██  ░██░▒██▒ ░  ░   ░░██▒██▓  ▓█   ▓██▒▒██████▒▒   ░▓█▒░██▓░▒████▒░██▓ ▒██▒░▒████▒
+     ░ ▐░  ░▓  ▒▓▒░ ░  ░   ░ ▓░▒ ▒   ▒▒   ▓▒█░▒ ▒▓▒ ▒ ░    ▒ ░░▒░▒░░ ▒░ ░░ ▒▓ ░▒▓░░░ ▒░ ░
+     ░ ░░   ▒ ░░▒ ░          ▒ ░ ░    ▒   ▒▒ ░░ ░▒  ░ ░    ▒ ░▒░ ░ ░ ░  ░  ░▒ ░ ▒░ ░ ░  ░
+       ░░   ▒ ░░░            ░   ░    ░   ▒   ░  ░  ░      ░  ░░ ░   ░     ░░   ░    ░   
+        ░   ░                  ░          ░  ░      ░      ░  ░  ░   ░  ░   ░        ░  ░ 
+  —————░———————————————————————————————————————————
+  Designed & developed by Viputheshwar Sitaraman. 
+  All rights reserved. (C) Copyright 2018. 
+  No re-use or modification without permission.
+  —————————————————————————————————————————————————
+     ✎ @viputheshwar
+     🍻 from Los Angeles, CA
+     ✉ http://sitaraman.vip
+-->
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <title>{{title}}</title>
+      <meta name="publisher" content="{{company}}">
+      <meta name="keywords" content="{{ meta.keywords }}">
+      <meta name="description" content="{{ meta.description }}"><!-- (limit to 150 characters) -->
+      <meta name="author" content="{{author}}">
+      <meta name="application-name" content="{{ website }}">
+
+      <!-- Search -->
+      <meta name="robots" content="index,follow"><!-- All Search Engines -->
+      <meta name="googlebot" content="index,follow"><!-- Google Specific -->
+
+      <!-- Social -->
+      <!-- <meta property="fb:app_id" content="123456789"> -->
+      <meta property="og:url" content="{{url}}">
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="{{title}}">
+      <!-- <meta property="og:image" content="http://example.com/image.jpg"> -->
+      <meta property="og:description" content="{{meta.description}}">
+      <meta property="og:site_name" content="{{website}}">
+      <meta property="og:locale" content="en_US">
+      <meta property="article:author" content="{{author}}">
+
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:site" content="{{twitter}}">
+      <meta name="twitter:creator" content="{{twitter}}">
+      <meta name="twitter:url" content="{{url}}">
+      <meta name="twitter:title" content="{{title}}">
+      <meta name="twitter:description" content="{{meta.description}}">
+      <!-- <meta name="twitter:image" content="http://example.com/image.jpg"> -->
+
+      <!-- Color -->
+      <meta name="theme-color" content="#00E295">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+      <!-- Favicon -->
+      <link rel="icon"
+        type="image/png"
+        href="./favicon.png">
+      <link rel="icon"
+        sizes="192x192"
+        href="./icon_192.png">  
+      
+
+      <!-- Bootstrap Core CSS -->
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      
+      <!-- Animation CSS -->
+      <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+
+      <!-- WOW js-->
+      <script src="//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script><script>new WOW().init();</script>
+
+      <!-- Custom Styles -->
+      <link href="style.css" rel="stylesheet">
+      
+      <!-- Fonts CSS -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  </head>
+  <base href="/policy-gen/">
+  <body data-spy="scroll" data-target="#navbar" style="background-color: transparent;">
+  <!--[if lt IE 7]>
+  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+      your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+
+    <div style="padding-top: 70px;" class="container">
+      <div class="jumbotron"> 
+        <h1><kbd>policy-gen</kbd></h1> 
+        <p>Quickly generate terms of use & policies for new websites and apps.</p> <p><a target="_blank" href="https://github.com/vsitaraman/policy-gen/"class="btn btn-primary btn-lg" role="button"><i class="fab fa-github"></i> View Repo</a></p>
+      </div>
+      <div class="page-heading">
+        <button ng-click="saveHTML()" class="btn btn-lg btn-success pull-right">Copy HTML</button>
+        <h1>Fill this out <small> to quickly generate terms & policies.</small></h1>
+      </div>
+      <div class="row well" style="margin: 20px 0;">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="company"><i class="far fa-building"></i>&nbsp; Company name</label>
+            <input type="text" ng-model="clientCompany" class="form-control" id="company" placeholder="Email">
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="url"><i class="fa fa-external-link-alt"></i>&nbsp; Website url</label>
+            <input type="text" ng-model="clientWebsite" class="form-control" id="url" placeholder="Email">
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="email"><i class="far fa-envelope-open"></i>&nbsp; Email address</label>
+            <input type="email" ng-model="clientEmail" class="form-control" id="email" placeholder="Email">
+          </div>
+        </div>
+      </div>
+
+        <p style="margin-bottom: 30px;" class="text-right text-muted">The generated documents on this website is for informational purposes only and do not constitute legal advice. Use at your own risk. <a class="text-danger" href="disclaimer"><strong>Read the Disclaimer</strong></a>.</p> 
+    </div><!-- ./container -->
+
+    <div ng-include="'static/nav.html'"></div>
+
+    <!-- Our Website Content Goes Here -->
+    <div ng-view style="min-width: 100vw;">
+      <update-meta property="og:url" content="{{url}}"></update-meta>
+      <update-meta property="twitter:url" content="{{url}}"></update-meta>
+    </div>
+    <div ng-include="'static/footer.html'"></div>
+        
+    <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <!-- Vendor: Angular, followed by our custom Javascripts -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script>
+
+    <!-- TinyMCE -->  
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/tinymce/4.7.3/tinymce.min.js"></script> -->
+
+    <!-- Our Website Javascripts -->
+    <script src="vendors/update-meta.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
