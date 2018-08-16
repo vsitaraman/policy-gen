@@ -50,14 +50,14 @@ app.run(function($rootScope, $http, $sce, $compile, $location) {
       alert("HTML successfully copied");
     };
 
-    $rootScope.title = "YourSite — We excel at mediocre slogans.";
-    $rootScope.url = "website.com";
-    $rootScope.website = "YourSite";
-    $rootScope.suffix = " — YourSite";
-    $rootScope.company = "Example, Inc.";
-    $rootScope.twitter = "@website";
+    $rootScope.title = "Policy Generator — Quickly generate terms & policies.";
+    $rootScope.url = "sitaraman.vip";
+    $rootScope.website = "Policy Generator";
+    $rootScope.suffix = " — Policy Generator";
+    $rootScope.company = "Sitaraman Enterprises LC";
+    $rootScope.twitter = "@viputheshwar";
     $rootScope.author = "Viputheshwar Sitaraman";
-    $rootScope.email = "hello@website.com";
+    $rootScope.email = "vip.sitaraman@gmail.com";
     $rootScope.metas = [{
       name:'description',
       content :'AngularJS Dynamic Metas'

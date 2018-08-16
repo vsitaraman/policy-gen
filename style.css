@@ -32,6 +32,9 @@ footer {
 	background-color: #2a3539;
 	color: white;
 }
+footer {
+  margin-top: 20px;
+}
 footer .nav-pills>li>a {
     color: white;
     opacity: 0.5;
